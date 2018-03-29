@@ -9,6 +9,7 @@ class Product(models.Model):
     description = models.CharField(max_length=255)
     price = models.IntegerField()
     slug = models.SlugField()
+    categories = models.ManyToManyField('products.ProductCategory')
 
     def __str__(self):
         return self.title
