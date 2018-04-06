@@ -24,7 +24,7 @@ SECRET_KEY = '@_x%fr^rpy1+wq7=s^l)_v4^ee3i!ugq2*9toxc1&-ddmx)ww1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -121,3 +121,5 @@ MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
 
+STRIPE_API_KEY = 'sk_test_v6i6F5fEOrID4O5VVSPo4LJZ'
+STRIPE_PUBLIC_API_KEY = 'pk_test_bStr9KPLkAHYx5P81I418k04'

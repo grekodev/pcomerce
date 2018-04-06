@@ -46,7 +46,7 @@
             <h5 class="card-header">Leave a Comment:</h5>
             <div class="card-body">
 {#              <form method="post" action="{% url "comments:createcomment" %}">#}
-              <form method="post" action="">
+              <form method="post" action="{% url "comments:createcomment" %}">
                 {% csrf_token %}
                 <div class="form-group">
                   <textarea name="{{comment_form.content.name}}" class="form-control" rows="3"></textarea>
@@ -108,8 +108,7 @@
             <h5 class="card-header">Pricing</h5>
             <div class="card-body">
               Only ${{product.price}}
-{#              <a href="{% url "buy" slug=product.slug %}"><button type="button" class="btn btn-success">Buy</button></a>#}
-              <a href=""><button type="button" class="btn btn-success">Buy</button></a>
+              <a href="{% url "products:buy" slug=product.slug %}"><button type="button" class="btn btn-success">Buy</button></a>
             </div>
           </div>
 
