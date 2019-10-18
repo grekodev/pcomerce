@@ -4,6 +4,6 @@ Django==2.0.1
 idna==2.6
 Pillow==5.0.0
 pytz==2018.3
-requests==2.18.4
+requests==2.20.0
 stripe==1.79.1
 urllib3==1.22
